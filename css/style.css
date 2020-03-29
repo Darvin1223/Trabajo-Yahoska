@@ -1,0 +1,423 @@
+/*** Globales ***/
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+    /** Reset para rems - 62.5% = 10px de 16**/
+    font-family: 'Dancing Script';
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src:  url('../fonts/Dancing\ Script.eot');
+    src:  url('../fonts/Dancing\ Script.eot') format('embedded-opentype'),
+      url('../fonts/Dancing\ Script.ttf') format('truetype'),
+      url('../fonts/Dancing\ Script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: 'Dancing Script Bold';
+    src:  url('../fonts/Dancing\ Script\ Bold.eot');
+    src:  url('../fonts/Dancing\ Script\ Bold.eot') format('embedded-opentype'),
+      url('../fonts/Dancing\ Script\ Bold.ttf') format('truetype'),
+      url('../fonts/Dancing\ Script\ Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+  }
+  :root{
+      --color-principal:#f093ff;
+  }
+
+
+.contenedor {
+    width: 98%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+
+
+/* icono de hamburguesa */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?czc8x2');
+    src:  url('../fonts/icomoon.eot?czc8x2#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?czc8x2') format('truetype'),
+      url('../fonts/icomoon.woff?czc8x2') format('woff'),
+      url('../fonts/icomoon.svg?czc8x2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-mail:before {
+    content: "\e906";
+  }
+  .icon-whatsapp:before {
+    content: "\e903";
+    color: #25d366;
+  }
+  .icon-linkedin:before {
+    content: "\e900";
+    color: #0077b5;
+  }
+  .icon-facebook:before {
+    content: "\e901";
+    color: #1877f2;
+  }
+  .icon-instagram:before {
+    content: "\e902";
+    color: #e4405f;
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram1:before {
+    content: "\ea92";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  }
+  
+  
+  h1 {
+    font-size: 3.3rem;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+.hiden {
+    display: none;
+}
+.btn {
+    color: #ffffff;
+    background-color: #da7dcc;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2.1rem;
+    padding: 0.5rem 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+
+.salto-linea {
+    line-height: 1.5;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.secction {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.secction p {
+    font-size: 1.3em;
+   font-family: Helvetica, sans-serif;
+}
+
+.d-block {
+    display: block;
+}
+
+.contenido-centrado {
+    max-width: 80rem;
+}
+
+/*** Header ***/
+header.header-principal{
+    background-image: url("../img/Headerindex.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+/* .barra{
+    background-color: #fff;
+    height: 2rem;
+} */
+nav {
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+}
+nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+nav ul li{
+    display: block;
+    float: none;  
+    float: left;  
+}
+header .navegacion {
+    background-color: #fff;
+}
+header .navegacion  a {
+    color:#000;
+	padding:3rem;
+	display:block;
+    text-decoration:none;
+    background-color:#fff;
+}
+nav ul li span {
+	margin-right:10px;
+}
+
+.menu_bar {
+    display: block;
+    float: none;
+    background-color: #fff;
+}
+
+.menu_bar {
+    display:block;
+    padding:0.5rem;
+    background-color: #fff;
+    color:#000;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:25px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.menu_bar span {
+    float:right;
+    font-size:40px;
+}
+/* slogan */
+
+.slogan{
+    padding-top: 4rem;
+    color: #fff;
+    display: block;
+    padding-left: 11rem;
+}
+.slogan h1{
+    font-size: 2.3rem;
+    padding-left: 1rem;
+    font-weight: 100;
+}
+.slogan p{
+    padding-left: 0rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+/* Main */
+.contenedor-sobre-mi{
+    color: var(--color-principal);
+    /* background-color: var(--color-principal); */
+}   
+.sobre-mi{
+    color: #fff;
+    background-color: var(--color-principal);
+}
+.est-contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Estadísticas{
+background-color:#dc9999 ;
+}
+.Estadísticas h2{
+    color: #fff;
+}
+li{
+    padding: 1rem 0;
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* informacion */
+
+.informacion{
+    background-color: var(--color-principal);
+    width: auto;
+    height: 10rem;
+    display: block;
+ }
+ .informacion p{
+    color: #fff;
+    margin-bottom: 1rem;
+ }
+ .informaciones .copyright span{
+    color:red;
+}
+/* 
+@media only screen and (min-width:56.813rem){
+    .informaciones{
+        display: flex;
+        justify-content: space-between;
+    }
+    .informaciones .copyright{
+       display: flex;
+       align-items: center;
+   }
+   
+   .informaciones .copyright{
+       display: flex;
+       align-items: center;
+   }
+   
+   .numeros{
+       margin-bottom: 1.5rem;
+       
+   }
+   
+   .numeros p:first-child{
+       margin: 1rem 0;
+   }
+} */
+/* footer */
+footer{
+    background-color: var(--coloR-parrafos);
+}
+.redes-sociales{
+    display: none;
+    
+}
+.redes-sociales-movil{
+    background-color: #fff;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 1.6rem;
+
+}
+.redes-sociales-movil a{
+    text-decoration: none;
+    height: 5rem;
+    margin-top: 3rem;
+}
+.redes-sociales-movil i{
+    display: flex;  
+    align-content: center;
+     margin: 1rem;
+    font-size: 3rem;
+}
+
+.redes-sociales-movil .icon-facebook{
+    color: #3b5998;
+    stroke: currentColor;
+    fill: currentColor;
+
+}
+
+
+
+  @media only screen and (min-width:56.813rem){
+    .redes-sociales-movil{
+        display: none;
+    }
+    .redes-sociales {
+        display: initial;
+        position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+        left: 0; /* Establecemos la barra en la izquierda */
+        top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+        z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+    }
+     
+        .redes-sociales  {
+            list-style: none;
+        }
+     
+        .redes-sociales a {
+            display: inline-block;
+            color:#fff;
+            background: #000;
+            padding: 10px 15px;
+            text-decoration: none;
+            -webkit-transition:all 500ms ease;
+            -o-transition:all 500ms ease;
+            transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+        }
+     
+        .redes-sociales .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red redes-sociales, aprovechando su class */
+        /* .redes-sociales .icon-twitter {background: #00abf0;} */
+        .redes-sociales .icon-instagram {background: #e6e6e6;} /* #d95232*/
+        /* .redes-sociales .icon-mail {background: #666666;} */
+     
+        .redes-sociales a:hover {
+            background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+            padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+        }
+  }
+/*** Internas ***/
+
+.header-internas .logo{
+    position: relative;
+    top: -46px;
+    right: -165px;
+    background-color: var(--color-principal);
+    width: 40px;
+    height: 40px;
+    border-radius: 150px;
+}
+.header-internas .logo a{
+    color: #fff;
+    top: 7px;
+    right: 8px;
+    position: absolute;
+    text-decoration: none;
+}
+
+section .contenido-historia p{
+    font-size: 1.3rem;
+}

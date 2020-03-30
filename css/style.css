@@ -407,7 +407,7 @@ footer{
 .header-internas .logo{
     position: relative;
     top: -46px;
-    right: -165px;
+    right: -196px;
     background-color: var(--color-principal);
     width: 40px;
     height: 40px;
@@ -423,4 +423,103 @@ footer{
 
 section .contenido-historia p{
     font-size: 1.3rem;
+}
+
+/* Portafolio */
+.portafolio .fotos-portafolio a{
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+.portafolio .fotos-portafolio img{
+    width: 200px;
+}
+
+/* Contactanos */
+.contacto{
+    display:flex;
+    justify-content: center;
+   
+
+}
+form{
+    color: #fff;
+    background-color: #b3b3b3;
+    width: 85%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+legend{
+    text-align: center;
+    font-size: 2rem;
+    display: inline;
+    padding-bottom: 3rem;
+}
+
+@media only screen and (min-width:56.813rem){
+    form.formulario{
+     width: 63%;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 11px #888888;
+    }
+    .contenedor-campos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .campos{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+   
+   
+}
+.campo{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 100%;
+}
+.campo label{
+    flex: 0 0 9rem;
+    width: 100%;
+}
+.campo textarea {
+    /* height: 12rem; */
+    height: 100%;
+    /* width: 84rem; */
+    width:100%;
+    resize: none;
+}
+@media only screen and (min-width: 56.813rem) {
+    .campo textarea {
+        height: 12rem;
+        width: 54rem;
+        width: 100%;
+        
+    }
+
+    .imagencontacto {
+        width: 77%;
+        margin-left: 13rem;
+        height: 77%;
+    }
+}
+.enviar{
+    display: flex;
+}
+@media only screen and (min-width: 56.813rem){
+    .enviar{
+        display: inline-block;
+        justify-content: center;
+    }
+    input.btn.d-block{
+        justify-content: center;
+        border-radius: 2rem;
+        flex: 0 0 auto;
+    }
 }

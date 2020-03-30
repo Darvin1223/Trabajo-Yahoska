@@ -3,29 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contacto</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header-internas">
         <div class="barra">
+            <div class="menu_bar">
+                <i class="icon-menu"></i>
+            </div>
             <div class="navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="Sobre-mi.html">Sobre mi</a>
-                <a href="Portafolio.html">Portafolio</a>
+                <nav>
+                    <ul>
+                        <a href="index.html">Inicio</a>
+                        <a href="Sobre-mi.html">Sobre mi</a>
+                        <a href="Portafolio.html">Portafolio</a>
+                    </ul>
+                </nav>
             </div>
-            <div class="navegacion-m">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="logo">
-                <a href="/">Y C</a>
-             </div>
+        </div>
+        <div class="logo">
+           <a href="/">Y C</a>
         </div>
     </header>
 
     <main class="contenedor">
+        <h2 class="centrar-texto color-principa">Contactame</h2>
+        <div id="contacto" class="contacto">
+            <form class="formulario" action="#" id="Formulario" method="POST">
+                <legend class="centrar-texto fw-500">Contáctanos llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campos">
+                        <div class="campos-izquierda">
+                            <div class="campo">
+                                <label for="Nombre">Nombre:</label>
+            
+                                <input id="Nombre" type="text" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="campo">
+                                <label for="Apellido">Apellido:</label>
+            
+                                <input id="Apellido" type="text" name="apellido" placeholder="Apellido" required>
+                            </div>
+                        </div>
+                        <div class="campos-derecha">
+                            <div class="campo">
+                                <label for="Telefono">Teléfono:</label>
         
+                                <input id="Telefono" type="tel"  name="telefono" placeholder="Teléfono" required>
+                            </div>
+                            <div class="campo w-100">
+                                <label for="Correo">Correo:</label>
+        
+                                <input id="Correo" type="email" name="correo" placeholder="Correo" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo w-100">
+                        <label for="TextArea">Mensaje:</label>
+
+                        <textarea id="TextArea" placeholder="Mensaje" required></textarea>
+                    </div>
+                </div><!--.contenedor-campos-->
+                <div class="enviar">
+                    <input class="btn d-block" type="submit" value="Enviar"> <!--Para evitar duplicado this.disable=true; this.value=`Enviando...`; -->
+
+                </div>
+                
+            </form>
+            <div id="mensaje-enviado"></div>
+        </div>
     </main>
+    <section class="informacion secction">
+        <div class="contenedor informaciones">
+            <div class="copyright">
+                <p>&copy;  Yahoska 2020 All rights reserved. </p>
+            </div>
+            <div class="info">
+                <div class="numeros">
+                    <p><i class="icon-whatsapp"></i> +1 (347) 486-8469</p>
+                </div>
+                    <div class="correo-footer">
+                    <p><span class="icon-mail"></span> yahoskacueva@model.com</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav class="redes-sociales">
+            <ul>
+                <li><a href="#"target="_blank" aria-label="linkedin"><i class="icon-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/Yahoska-Cuevas-100310604697809/" target="_blank" aria-label="Facebook" class="icon-facebook"></a></li>
+                <li><a href="https://instagram.com/yahoskacuevas?igshid=1bfcxaku5ylol" target="_blank" aria-label="instagram" class="icon-instagram"></a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales-movil">
+            <a href="#"target="_blank" aria-label="linkedin"><i class="icon-linkedin"></i></a>
+            <a href="https://www.facebook.com/Yahoska-Cuevas-100310604697809/" target="_blank" aria-label="Facebook" ><i class="icon-facebook"></i></a>
+            <a href="https://instagram.com/yahoskacuevas?igshid=1bfcxaku5ylol" target="_blank" aria-label="instagram"><i class="icon-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

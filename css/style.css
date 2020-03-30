@@ -133,7 +133,7 @@ h4 {
 }
 .btn {
     color: #ffffff;
-    background-color: #da7dcc;
+    background-color: #eb66ff;
     font-weight: 700;
     text-decoration: none;
     font-size: 2.1rem;
@@ -143,6 +143,20 @@ h4 {
     border: none;
     display: block;
     flex: 0 0 100%;
+}
+@media only screen and (min-width: 56.8rem) {
+    body a.btn {
+        display: inline-block;
+        border-radius: 2rem;
+        flex: 0 0 auto;
+        margin: 1rem 0;
+    }
+}
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #e433ff;
+    transition: ease 0.3s;
 }
 
 .salto-linea {
@@ -163,8 +177,8 @@ h4 {
 }
 
 .secction p {
-    font-size: 1.3em;
-   font-family: Helvetica, sans-serif;
+    font-size: 1.6rem;
+  
 }
 
 .d-block {
@@ -240,6 +254,7 @@ nav ul li span {
     float:right;
     font-size:40px;
 }
+/* Manu desktop */
 @media only screen and (min-width:56.813rem){
     .menu_bar{
         display: none;
@@ -257,13 +272,16 @@ nav ul li span {
         background-color: rgba(240, 147, 255, 0.6);
     }
     header .navegacion nav a{
-        color: #fff;
+        color: #000;
         font-size: 1.5rem;
         padding: 1rem;
         display: inline-block;
         text-decoration: none;
         background-color: transparent;
         text-decoration: none;
+    }
+    header .navegacion nav a:hover{
+        text-decoration: underline #fff;
     }
    
 }
@@ -307,7 +325,7 @@ nav ul li span {
     }
 }
 
-/* Main */
+/* Sobre mi */
 .contenedor-sobre-mi{
     color: var(--color-principal);
     /* background-color: var(--color-principal); */
@@ -316,6 +334,36 @@ nav ul li span {
     color: #fff;
     background-color: var(--color-principal);
 }
+
+@media only screen and (min-width:56.813rem){
+    .sobre-mi{
+        background-color: #9494b8;
+    }
+    .contenedor-sobre-mi{
+        padding: 2rem 2rem;
+    }
+    .contenido-mi{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .sobre-mif{
+        width: 222rem;
+        display: block;
+    }
+    .sobre-mif img{
+        width: 54%;
+        height: 50%;
+    }
+    .arriba, .abajo{
+        padding-top: 5rem;
+    }
+    .sobre-mit .texto{
+        padding-top: 6rem;
+        padding-right: 2rem;
+    }
+  
+}
+/* Estadisticas */
 .est-contenedor{
     display: flex;
     justify-content: space-around;
@@ -329,9 +377,41 @@ background-color:#dc9999 ;
 }
 li{
     padding: 1rem 0;
-    list-style: none;
+    list-style: none;   
     color: #fff;
     font-size: 1.5rem;
+}
+@media only screen and (min-width:56.813rem){
+   
+    .Estadísticas{
+        background-color: transparent;
+    }
+    .Estadísticas h2{
+        color: #000;
+    }
+    .est-contenedor{
+        display: flex;
+        width: 100%;
+    }
+   
+    .izquierda{
+        background-color:#dc9999 ;
+        width: 50%;
+    }
+    .derecha{
+        background-color: #a09696;
+        width: 50%;
+    }
+    .izquierda ul{
+        padding-left: 18rem;
+    }
+    .derecha ul{
+        padding-right: 19rem;
+    }
+    .secction{
+        padding: 1rem 0;
+    }
+   
 }
 /* informacion */
 
@@ -348,11 +428,17 @@ li{
  .informaciones .copyright span{
     color:red;
 }
-/* 
+
 @media only screen and (min-width:56.813rem){
+    .informacion{
+        height: 8rem;
+    }
     .informaciones{
         display: flex;
         justify-content: space-between;
+    }
+    .informaciones p{
+        font-size: 1.3em;
     }
     .informaciones .copyright{
        display: flex;
@@ -372,7 +458,7 @@ li{
    .numeros p:first-child{
        margin: 1rem 0;
    }
-} */
+} 
 /* footer */
 footer{
     background-color: var(--coloR-parrafos);
@@ -454,7 +540,7 @@ footer{
         }
   }
 /*** Internas ***/
-
+/* Sobre mi */
 .header-internas .logo{
     position: relative;
     top: -46px;
@@ -474,6 +560,34 @@ footer{
 
 section .contenido-historia p{
     font-size: 1.3rem;
+}
+@media only screen and (min-width:56.813rem){
+    .Sobre-mi h1{
+        color: #000;
+    }
+    .mi-historia,.historia-1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mi-historia img {
+        width: 82%;
+        padding-left: 2rem;
+    }
+    .mi-historia p{
+        padding-right: 1rem;
+    }
+    .historia-1 img{
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .historia-1 p {
+        padding-left: 1rem;
+    }
+    header.header-internas .logo{
+        position: relative;
+        top: -32px;
+        right: -650px;
+    }
 }
 
 /* Portafolio */

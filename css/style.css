@@ -372,7 +372,9 @@ nav .redes-sociales-movil a {
     font-size: 2.5rem;
     text-decoration: none;
 }
-
+.contenedor-redes-sociales{
+    display: none;
+}
 @media only screen and (min-width:56.813rem){
     .redes-sociales-movil{
         display: none;

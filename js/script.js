@@ -15,7 +15,9 @@ function main(){
 				'max-height':'300px',
 				'width':'18rem'
 			});
-			
+			$('contenedor-redes-sociales').css({
+				'display': 'none'
+			})
 		
 			contador = 0;
 		} else {

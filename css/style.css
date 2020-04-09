@@ -295,11 +295,12 @@ nav ul li span {
     }
     header .navegacion{
         background-color: transparent;
+        opacity: 0.8;
     }
     header .navegacion nav {
         position: initial;
         height: 100%;
-        background-color: rgba(240, 147, 255, 0.6);
+        background-color: var(--color-principal);
     }
     header .navegacion nav a{
         color: #000;
@@ -312,6 +313,7 @@ nav ul li span {
     }
     header .navegacion nav a:hover{
         text-decoration: underline #fff;
+        
     }
    
 }
@@ -327,6 +329,7 @@ nav ul li span {
 @media only screen and (min-width: 41.625rem){
     /* 41.625rem == 666px */
     .logo p{
+        color:#fff;
         right: 47%;
     }
 }
@@ -441,6 +444,7 @@ nav .redes-sociales-movil a {
     color: #fff;
     border-radius: 2rem;
     background-color: var(--color-principal);
+    box-shadow: 5px 5px 5px 5px var(--color-principal);
 }
 
 .sobre-mit {
@@ -457,6 +461,7 @@ nav .redes-sociales-movil a {
 .est-contenedor{
 background-color: var(--color-secundario);
 border-radius: 2rem;
+box-shadow: 5px 5px 5px 5px var(--color-secundario);
 }
 .Estadísticas h2{
     color: #000;

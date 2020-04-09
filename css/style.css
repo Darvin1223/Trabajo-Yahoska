@@ -220,6 +220,18 @@ p {
     color: var(--color-encabezado);
 }
 
+@media only screen and (min-width: 90rem){
+    .secction p {
+        font-size: 1.8em;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+}
+
 /*** Header ***/
 header.header-principal{
     background-image: url("../img/Headerindex.jpg");
@@ -303,7 +315,7 @@ nav ul li span {
         background-color: var(--color-principal);
     }
     header .navegacion nav a{
-        color: #000;
+        color: #fff;
         font-size: 2.5rem;
         padding: 1rem;
         display: inline-block;
@@ -312,7 +324,7 @@ nav ul li span {
         text-decoration: none;
     }
     header .navegacion nav a:hover{
-        text-decoration: underline #fff;
+        text-decoration: underline #E83F9F;
         
     }
    
@@ -331,6 +343,11 @@ nav ul li span {
     .logo p{
         color:#fff;
         right: 47%;
+    }
+}
+@media only screen and (min-width:63.938rem){
+    .logo{
+        display: none;
     }
 }
 /* slogan */
@@ -436,6 +453,9 @@ nav .redes-sociales-movil a {
 .Sobre-mi img{
     border-radius: 2rem;
 }
+.foto-historia1{
+    display: none;
+}
 .contenedor-sobre-mi h2 {
     color: #000;
     font-size: 4rem;
@@ -493,7 +513,7 @@ box-shadow: 5px 5px 5px 5px var(--color-secundario);
 
 @media only screen and (min-width:64rem){
     .informacion{
-        height: 8rem;
+        height: 13rem;
     }
     .informaciones{
         display: flex;
@@ -549,7 +569,25 @@ box-shadow: 5px 5px 5px 5px var(--color-secundario);
 section .contenido-historia p{
     font-size: 1.3rem;
 }
+@media only screen and (min-width:63.938rem){
+    
+}
 @media only screen and (min-width:64rem){
+    .foto-historia1{
+        display: initial;
+    }
+    .contenido-historia .content-foto-redonda {
+        display: initial;
+        position: initial;
+        width: auto;
+        height: auto;
+        overflow: initial;
+        border-radius: 0;
+    }
+    
+    .contenido-historia img{
+        border-radius: 8rem;
+    }
     .Sobre-mi h1{
         color: #000;
     }
@@ -557,19 +595,23 @@ section .contenido-historia p{
         display: flex;
         justify-content: space-between;
     }
-    .mi-historia img {
+    .mi-historia img,
+    .historia-1 img {
         width: 82%;
         padding-left: 2rem;
     }
     .mi-historia p{
         padding-right: 1rem;
     }
-    .historia-1 img{
-        width: 100%;
-        padding-left: 2rem;
+    .imagen-historia{
+        margin: 0;
+        padding-top: 2rem;
     }
     .historia-1 p {
         padding-left: 1rem;
+    }
+    .Sobre-mi .content-foto-redonda img {
+    height: auto;
     }
     /* header.header-internas .logo{
         position: relative;
@@ -615,6 +657,9 @@ label {
 
 
 @media only screen and (min-width:64rem){
+    label {
+        display: initial;
+    }
     form.formulario{
      width: 63%;
     padding: 2rem;
@@ -644,6 +689,9 @@ label {
 .campo label{
     flex: 0 0 9rem;
     width: 100%;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
 }
 .campo textarea {
     /* height: 12rem; */
@@ -681,10 +729,10 @@ textarea.TextArea{
     justify-content: center;
 }
 @media only screen and (min-width: 64rem){
-    .enviar{
+    /* .enviar{
         display: inline-block;
         justify-content: center;
-    }
+    } */
     input.btn.d-block{
         justify-content: center;
         border-radius: 2rem;

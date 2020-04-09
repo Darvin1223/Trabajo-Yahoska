@@ -19,16 +19,23 @@
                         <a href="Sobre-mi.html">Sobre mi</a>
                         <a href="Portafolio.html">Portafolio</a>
                     </ul>
+
+                    <div class="redes-sociales-movil">
+                        <a href="https://www.linkedin.com/in/yahoska-cuevas-b0139a192/"target="_blank" aria-label="linkedin"><i class="icon-linkedin"></i></a>
+                        <a href="https://www.facebook.com/Yahoska-Cuevas-100310604697809/" target="_blank" aria-label="Facebook" ><i class="icon-facebook"></i></a>
+                        <a href="https://instagram.com/yahoskacuevas?igshid=1bfcxaku5ylol" target="_blank" aria-label="instagram"><i class="icon-instagram"></i></a>
+                    </div>
                 </nav>
+                
             </div>
-        </div>
-        <div class="logo">
-           <a href="/">Y C</a>
+            <div class="logo">
+                <p>Y C</p>
+            </div>
         </div>
     </header>
 
     <main class="contenedor secction">
-        <h2 class="centrar-texto color-principa">Contactame</h2>
+        <h2 class="centrar-texto .color-encabezado">Contactame</h2>
         <div id="contacto" class="contacto">
             <form class="formulario" action="#" id="Formulario" method="POST">
                 <legend class="centrar-texto fw-500">Contáctanos llenando todos los campos</legend>
@@ -39,31 +46,31 @@
                             <div class="campo">
                                 <label for="Nombre">Nombre:</label>
             
-                                <input id="Nombre" type="text" name="nombre" placeholder="Nombre" required>
+                                <input class="inputs" id="Nombre" type="text" name="nombre" placeholder="Nombre" required>
                             </div>
                             <div class="campo">
                                 <label for="Apellido">Apellido:</label>
             
-                                <input id="Apellido" type="text" name="apellido" placeholder="Apellido" required>
+                                <input class="inputs" id="Apellido" type="text" name="apellido" placeholder="Apellido" required>
                             </div>
                         </div>
                         <div class="campos-derecha">
                             <div class="campo">
                                 <label for="Telefono">Teléfono:</label>
         
-                                <input id="Telefono" type="tel"  name="telefono" placeholder="Teléfono" required>
+                                <input class="inputs" id="Telefono" type="tel"  name="telefono" placeholder="Teléfono" required>
                             </div>
                             <div class="campo w-100">
                                 <label for="Correo">Correo:</label>
         
-                                <input id="Correo" type="email" name="correo" placeholder="Correo" required>
+                                <input class="inputs" id="Correo" type="email" name="correo" placeholder="Correo" required>
                             </div>
                         </div>
                     </div>
                     <div class="campo w-100">
                         <label for="TextArea">Mensaje:</label>
 
-                        <textarea id="TextArea" placeholder="Mensaje" required></textarea>
+                        <textarea id="TextArea" class="TextArea" placeholder="Mensaje" required></textarea>
                     </div>
                 </div><!--.contenedor-campos-->
                 <div class="enviar">
@@ -75,7 +82,16 @@
             <div id="mensaje-enviado"></div>
         </div>
     </main>
-    <section class="informacion secction">
+    <section class="contenedor-redes-sociales ">
+        <nav class="redes-sociales">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yahoska-cuevas-b0139a192/"target="_blank" aria-label="linkedin" class="icon-linkedin"></a></li>
+                <li><a href="https://www.facebook.com/Yahoska-Cuevas-100310604697809/" target="_blank" aria-label="Facebook" class="icon-facebook"></a></li>
+                <li><a href="https://instagram.com/yahoskacuevas?igshid=1bfcxaku5ylol" target="_blank" aria-label="instagram" class="icon-instagram"></a></li>
+            </ul>
+        </nav>
+    </section>
+    <footer class="informacion secction">
         <div class="contenedor informaciones">
             <div class="copyright">
                 <p>&copy;  Yahoska 2020 All rights reserved. </p>
@@ -88,20 +104,6 @@
                     <p><span class="icon-mail"></span> yahoskacueva@model.com</p>
                     </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <nav class="redes-sociales">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/yahoska-cuevas-b0139a192/"target="_blank" aria-label="linkedin"><i class="icon-linkedin"></i></a></li>
-                <li><a href="https://www.facebook.com/Yahoska-Cuevas-100310604697809/" target="_blank" aria-label="Facebook" class="icon-facebook"></a></li>
-                <li><a href="https://instagram.com/yahoskacuevas?igshid=1bfcxaku5ylol" target="_blank" aria-label="instagram" class="icon-instagram"></a></li>
-            </ul>
-        </nav>
-        <div class="redes-sociales-movil">
-            <a href="https://www.linkedin.com/in/yahoska-cuevas-b0139a192/"target="_blank" aria-label="linkedin"><i class="icon-linkedin"></i></a>
-            <a href="https://www.facebook.com/Yahoska-Cuevas-100310604697809/" target="_blank" aria-label="Facebook" ><i class="icon-facebook"></i></a>
-            <a href="https://instagram.com/yahoskacuevas?igshid=1bfcxaku5ylol" target="_blank" aria-label="instagram"><i class="icon-instagram"></i></a>
         </div>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>

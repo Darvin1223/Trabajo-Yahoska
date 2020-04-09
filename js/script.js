@@ -1,5 +1,5 @@
 $(document).ready(main);
- 
+
 var contador = 1;
  
 function main(){
@@ -10,14 +10,23 @@ function main(){
 			$('nav').animate({
 				left: '0'
 			});
+			$('nav').css({
+				'background-color':'#fff',
+				'max-height':'300px',
+				'width':'18rem'
+			});
+			
+		
 			contador = 0;
 		} else {
 			contador = 1;
 			$('nav').animate({
 				left: '-100%'
 			});
+			
+			
 		}
  
 	});
  
-};
+}; 

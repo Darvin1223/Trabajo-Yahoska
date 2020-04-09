@@ -285,7 +285,7 @@ nav ul li span {
     font-size:40px;
 }
 /* Manu desktop */
-@media only screen and (min-width:56.813rem){
+@media only screen and (min-width:64rem){
     .menu_bar{
         display: none;
     }
@@ -324,6 +324,12 @@ nav ul li span {
     right: 45%;
     font-family: 'Dancing Script';
 }
+@media only screen and (min-width: 41.625rem){
+    /* 41.625rem == 666px */
+    .logo p{
+        right: 47%;
+    }
+}
 /* slogan */
 
 .slogan{
@@ -344,7 +350,7 @@ nav ul li span {
     font-weight: 600;
 
 }
-@media only screen and (min-width:56.813rem){
+@media only screen and (min-width:64rem){
     header .slogan {
         padding-top: 1rem;
         color: #fff;
@@ -375,7 +381,7 @@ nav .redes-sociales-movil a {
 .contenedor-redes-sociales{
     display: none;
 }
-@media only screen and (min-width:56.813rem){
+@media only screen and (min-width:64rem){
     .redes-sociales-movil{
         display: none;
     }
@@ -480,7 +486,7 @@ border-radius: 2rem;
     color:red;
 }
 
-@media only screen and (min-width:56.813rem){
+@media only screen and (min-width:64rem){
     .informacion{
         height: 8rem;
     }
@@ -538,7 +544,7 @@ border-radius: 2rem;
 section .contenido-historia p{
     font-size: 1.3rem;
 }
-@media only screen and (min-width:56.813rem){
+@media only screen and (min-width:64rem){
     .Sobre-mi h1{
         color: #000;
     }
@@ -603,7 +609,7 @@ label {
 }
 
 
-@media only screen and (min-width:56.813rem){
+@media only screen and (min-width:64rem){
     form.formulario{
      width: 63%;
     padding: 2rem;
@@ -650,7 +656,7 @@ textarea.TextArea{
     border-radius: 1rem;
     height: 16rem;
 }
-@media only screen and (min-width: 56.813rem) {
+@media only screen and (min-width: 64rem) {
     .campo textarea {
         height: 12rem;
         width: 54rem;
@@ -669,7 +675,7 @@ textarea.TextArea{
     width: 100%;
     justify-content: center;
 }
-@media only screen and (min-width: 56.813rem){
+@media only screen and (min-width: 64rem){
     .enviar{
         display: inline-block;
         justify-content: center;

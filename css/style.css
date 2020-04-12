@@ -353,25 +353,15 @@ nav ul li span {
 /* slogan */
 
 .slogan{
-    padding-top: 4rem;
+    /* padding-top: 4rem;
     color: #fff;
     display: block;
-    padding-left: 11rem;
-}
-.slogan h1{
-    font-size: 2.3rem;
-    padding-left: 1rem;
-    font-weight: 100;
-}
-.slogan p{
-    padding-left: 0rem;
-    padding-top: 1rem;
-    font-size: 2rem;
-    font-weight: 600;
-
+    padding-left: 11rem; */
+    display: none;
 }
 @media only screen and (min-width:64rem){
     header .slogan {
+       
         padding-top: 1rem;
         color: #fff;
         display: block;
@@ -381,9 +371,11 @@ nav ul li span {
     .slogan h1 {
         color: #000;
         font-size: 9rem;
+        font-family: 'Dancing Script Bold';
     }
     .slogan p {
         padding-left: 3rem;
+        font-family: 'Dancing Script';
         padding-top: 0rem;
         font-size: 4rem;
         font-weight: 500;
